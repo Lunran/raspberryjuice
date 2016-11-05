@@ -9,8 +9,7 @@ You can cast a spell of Python in Vivecraft!
   - `pip install picraft`
     - Is there a docker build for picraft?
 0. Run this docker build
-  - `docker run -it -p 25565:25565 -p 4711:4711 Lunran/raspberryjuice`
-  - Do you want a superflat world? Use `Lunran/raspberryjuice:flat`
+  - `docker run -it -p 25565:25565 -p 4711:4711 lunran/raspberryjuice`
 0. Find out your Docker container's IP
   - `docker-machine ip <container-name>`
 0. Run Vivecraft 1.7.10

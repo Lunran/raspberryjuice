@@ -23,7 +23,7 @@ RUN wget http://tcpr.ca/files/spigot/spigot-1.7.9-R0.2-SNAPSHOT.jar
 # Download Rapsberry Juice
 RUN wget -P plugins https://github.com/zhuowei/RaspberryJuice/raw/master/jars/raspberryjuice-1.5.jar
 
-# Open port for mcpi
+# Open port for picraft and mcpi
 EXPOSE 4711
 # Open port for Minecraft
 EXPOSE 25565

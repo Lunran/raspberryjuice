@@ -1,17 +1,18 @@
-You can cast a spell of Python in Vivecraft!
-
-# How to setup
+# How to setup and use
 
 0. Install Vivecraft 1.7.10 (VR mod for Minecraft)
-  - http://www.vivecraft.org/
-0. Install picraft (Minecraft API for Raspberry Juice)
-  - http://picraft.readthedocs.io/en/release-0.6/
-  - `pip install picraft`
-    - Is there a docker build for picraft?
+  - Refer to http://www.vivecraft.org/
 0. Run this docker build
   - `docker run -it -p 25565:25565 -p 4711:4711 lunran/raspberryjuice`
-0. Find out your Docker container's IP
-  - `docker-machine ip <container-name>`
 0. Run Vivecraft 1.7.10
-  - Select "Multiplayer", add your Docker container's IP as a new server and join it
-0. Now you are ready to interact with Vivecraft using Python!
+  - Select "Multiplayer"
+  - Add the IP address as a new server
+    - If you're running a Docker Machine VM, use what you got in the previous step
+    - Otherwise use "localhost"
+  - Join it!
+0. Run Python and import Picraft (Python API for Minecraft Pi edition or Raspberry Juice)
+  - `docker run -it -p 4711:4711 lunran/picraft`
+    - Refer to https://github.com/Lunran/picraft for details
+  - or `pip install picraft` if you already have Python
+
+Cast a spell of Python in Vivecraft!
